@@ -1,1 +1,111 @@
-Cybersecurity Engineering 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Engineers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+    }
+    header {
+      background: #0b3c5d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      background: white;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      color: #0b3c5d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #0b3c5d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .lang {
+      text-align: center;
+      margin: 10px;
+    }
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body id="page">
+
+<div class="lang">
+  <button onclick="setArabic()">عربي</button>
+  <button onclick="setEnglish()">English</button>
+</div>
+
+<header>
+  <h1 id="title">Cybersecurity Engineers</h1>
+  <p id="college">كلية الهندسة – قسم هندسة الشبكات والأمن السيبراني</p>
+  <p id="author">إعداد: Brar Mohammed</p>
+</header>
+
+<section>
+  <h2 id="annTitle">📢 إعلانات</h2>
+  <p id="annText">لا توجد إعلانات حالياً.</p>
+</section>
+
+<section>
+  <h2 id="secTitle">📚 الأقسام</h2>
+  <a href="#" id="lec">📘 المحاضرات اليومية</a>
+  <a href="#" id="files">📂 الملازم والملفات</a>
+  <a href="#" id="exam">🗓️ الامتحانات</a>
+</section>
+
+<footer>
+  <p id="footerText">خاص بطلاب القسم فقط</p>
+</footer>
+
+<script>
+function setArabic() {
+  document.documentElement.lang = "ar";
+  document.documentElement.dir = "rtl";
+  title.innerText = "Cybersecurity Engineers";
+  college.innerText = "كلية الهندسة – قسم هندسة الشبكات والأمن السيبراني";
+  author.innerText = "إعداد: Brar Mohammed";
+  annTitle.innerText = "📢 إعلانات";
+  annText.innerText = "لا توجد إعلانات حالياً.";
+  secTitle.innerText = "📚 الأقسام";
+  lec.innerText = "📘 المحاضرات اليومية";
+  files.innerText = "📂 الملازم والملفات";
+  exam.innerText = "🗓️ مواعيد الأمتحانات";
+  footerText.innerText = "خاص بطلاب القسم فقط";
+}
+
+function setEnglish() {
+  document.documentElement.lang = "en";
+  document.documentElement.dir = "ltr";
+  title.innerText = "Cybersecurity Engineers";
+  college.innerText = "College of Engineering – Network & Cybersecurity Engineering";
+  author.innerText = "Prepared by: Brar Mohammed";
+  annTitle.innerText = "📢 Announcements";
+  annText.innerText = "No announcements at the moment.";
+  secTitle.innerText = "📚 Sections";
+  lec.innerText = "📘 Daily Lectures";
+  files.innerText = "📂 Handouts & Files";
+  exam.innerText = "🗓️ Exam Dates";
+  footerText.innerText = "For department students only";
+}
+</script>
+
+</body>
+</html>
